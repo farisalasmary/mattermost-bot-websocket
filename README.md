@@ -9,7 +9,6 @@ change:
 def get_bot_response(message, sender_name):
     my_message = 'welcome!!!!!!!!!'
     send_message(my_message, sender_name)
-    return my_message
 ```
 to the following:
 ```python
@@ -23,5 +22,4 @@ def get_bot_response(message, sender_name):
     
     for my_message in messages:
       send_message(my_message, sender_name)
-    return my_message
 ```
