@@ -15,7 +15,13 @@ to the following:
 from rasa_core.agent import Agent
 from rasa_core.interpreter import RasaNLUInterpreter
 
+interpreter = RasaNLUInterpreter('models/current/nlu')
+messages = ["Hi! you can chat in this window. Type 'stop' to end the conversation."]
+global agent
+agent = Agent.load('models/dialogue', interpreter=interpreter)
+
 def get_bot_response(message, sender_name):
+    global agent
     responses = agent.handle_message(message)
     for r in responses:
         messages.append(r.get("text"))
