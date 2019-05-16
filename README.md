@@ -1,2 +1,2 @@
-# mattermost-bot-websocket
-Listening for direct messages in Mattermost chatting system and reply to them automatically using a websockt through Mattermost API.
+# Mattermost Bot
+Listening for direct messages in Mattermost chatting system and reply to them automatically using a websockt through Mattermost API. You can edit the function `get_bot_response` that receives the direct message `message` and reply with `my_message` as its output. Also, you can use an intellegent chatbot like [Rasa Chatbot](https://rasa.com/) inside `get_bot_response` to find the best reply for the message `message`.
