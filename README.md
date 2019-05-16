@@ -5,14 +5,14 @@ Listening for direct messages in Mattermost chatting system and reply to them au
 This is an example of using Rasa chatbot in `get_bot_response` function. The code is based on [this link](https://rasa.com/docs/core/quickstart/#id3).
 
 change:
-```
+```python
 def get_bot_response(message, sender_name):
     my_message = 'welcome!!!!!!!!!'
     send_message(my_message, sender_name)
     return my_message
 ```
 to the following:
-```
+```python
 from rasa_core.agent import Agent
 from rasa_core.interpreter import RasaNLUInterpreter
 
